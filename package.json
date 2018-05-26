@@ -1,0 +1,38 @@
+{
+  "name": "fastify-config-loader",
+  "version": "1.0.0",
+  "description": "Fastify Config Loader",
+  "main": "bin/run.js",
+  "scripts": {
+    "test": "standard main.js"
+  },
+  "author": "Aref Mirhosseini <code@arefmirhosseini.com> (http://arefmirhosseini.com)",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.0.37",
+    "fastify-plugin": "^1.0.1"
+  },
+  "esm": {
+    "mode": "all",
+    "cjs": true
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
+  },
+  "bin": {
+    "fastify-config-loader": "run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arefm/fastify-config-loader.git"
+  },
+  "keywords": [
+    "fastify",
+    "configs",
+    "loader"
+  ],
+  "bugs": {
+    "url": "https://github.com/arefm/fastify-config-loader/issues"
+  },
+  "homepage": "https://github.com/arefm/fastify-config-loader#readme"
+}
