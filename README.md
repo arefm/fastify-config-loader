@@ -28,9 +28,9 @@ You have to put config files into `CONFIGS_DIRECTORY_PATH` which will pass as a 
    |_ configs.staging.json
    |_ configs.production.json
 ```
-The main config file is `config.json` and base on different environments other files will be marge into it.
+The main config file is `configs.json` and base on different environments other files will be marge into it.
 for example if I set `NODE_ENV=production` the production config file will be concat to main configs file and returns as an object into my application.
-You can also add a `config.js` file to the configs directory. which will help to modify configs from json files with same keys. for example:
+You can also add a `configs.js` file to the configs directory. which will help to modify configs from json files with same keys. for example:
 
 **configs.json**
 ```json
@@ -42,7 +42,7 @@ You can also add a `config.js` file to the configs directory. which will help to
 }
 ```
 
-**config.js**
+**configs.js**
 ```javascript
 module.exports = {
   cors_whitelist: (data) => {
